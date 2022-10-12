@@ -1,8 +1,8 @@
 :root {
   --heading-font: "Allerta Stencil", sans-serif;
   --content-font: "Prompt", sans-serif;
-  --primary-color: #7d6e83;
-  --secondary-color: #f8ede3;
+  --primary-color: #ffac41;
+  --secondary-color: #323232;
 }
 body {
   background-color: white;
@@ -16,6 +16,7 @@ h5,
 h6 {
   font-family: var(--heading-font);
   font-weight: bold;
+  color: var(--primary-color);
 }
 
 h1 {
@@ -25,6 +26,8 @@ p,
 a,
 ul {
   font-family: var(--content-font);
+  color: #ff1e56;
+  line-height: 2;
 }
 
 .hero {
@@ -35,7 +38,7 @@ ul {
 .btn-branding {
   background: var(--primary-color);
   border-radius: 4px;
-  color: white;
+  color: 000000;
   font-size: 16px;
   line-height: 15px;
   padding: 10px 20px;
