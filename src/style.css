@@ -72,4 +72,19 @@ ul {
     font-size: 48px;
     text-align: center;
   }
+  p {
+    font-size: 12px;
+  }
+  .btn-branding {
+    background: var(--primary-color);
+    border-radius: 12px;
+    color: var(--btn-text-color);
+    font-size: 12px;
+    line-height: 15px;
+    padding: 10px 10px;
+    font-family: var(--content-font);
+    box-shadow: var(--box-shadow);
+    min-width: 150px;
+    margin: 2px;
+  }
 }
