@@ -3,6 +3,8 @@
   --content-font: "Prompt", sans-serif;
   --primary-color: #ffac41;
   --secondary-color: #323232;
+  --content-color: #ff1e56;
+  --btn-text-color: #000000;
 }
 body {
   background-color: white;
@@ -26,7 +28,7 @@ p,
 a,
 ul {
   font-family: var(--content-font);
-  color: #ff1e56;
+  color: var(--content-color);
   line-height: 2;
 }
 
@@ -38,10 +40,11 @@ ul {
 .btn-branding {
   background: var(--primary-color);
   border-radius: 4px;
-  color: 000000;
+  color: var(--btn-text-color);
   font-size: 16px;
   line-height: 15px;
   padding: 10px 20px;
+  font-family: var(--content-font);
 }
 
 .btn-branding:hover {
