@@ -3,9 +3,12 @@
   --content-font: "Prompt", sans-serif;
   --primary-color: #ffac41;
   --secondary-color: #323232;
+  --secondary-color-with-opacity: #3232329a;
   --content-color: #ff1e56;
   --btn-text-color: #000000;
+  --box-shadow: 0 5px 20px rgba(255, 196, 0, 0.3);
 }
+
 body {
   background-color: white;
 }
@@ -25,7 +28,6 @@ h1 {
   font-size: 90px;
 }
 p,
-a,
 ul {
   font-family: var(--content-font);
   color: var(--content-color);
@@ -33,20 +35,41 @@ ul {
 }
 
 .hero {
-  padding: 160px;
+  padding: 160px 0;
   text-align: center;
   background: var(--secondary-color);
 }
+
 .btn-branding {
   background: var(--primary-color);
-  border-radius: 4px;
+  border-radius: 12px;
   color: var(--btn-text-color);
   font-size: 16px;
-  line-height: 15px;
-  padding: 10px 20px;
+  line-height: 20px;
+  padding: 20px 20px;
   font-family: var(--content-font);
+  box-shadow: var(--box-shadow);
+  min-width: 150px;
+  margin: 2px;
 }
 
 .btn-branding:hover {
   background: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 70px;
+    text-align: center;
+  }
+  .hero {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 48px;
+    text-align: center;
+  }
 }
