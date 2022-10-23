@@ -1,12 +1,12 @@
 :root {
   --heading-font: "Allerta Stencil", sans-serif;
   --content-font: "Prompt", sans-serif;
-  --primary-color: #ffac41;
-  --secondary-color: #323232;
-  --secondary-color-with-opacity: #3232329a;
-  --content-color: #ff1e56;
-  --btn-text-color: #000000;
-  --box-shadow: 0 5px 20px rgba(255, 196, 0, 0.3);
+  --primary-color: #5dacbd;
+  --secondary-color: #24527a;
+  --secondary-color-with-opacity: #24527aa4;
+  --content-color: #a7bcb9;
+  --btn-text-color: #e0ebeb;
+  --box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -14,15 +14,21 @@ body {
   max-width: 1920px;
 }
 
-h1,
+h1 {
+  font-family: var(--heading-font);
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+p,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--heading-font);
-  font-weight: 500;
-  color: var(--primary-color);
+  font-family: var(--content-font);
+  color: var(--content-color);
+  line-height: 1.5;
 }
 
 h1 {
@@ -37,18 +43,15 @@ h3 {
   margin-top: 20px;
 }
 
-p {
-  font-family: var(--content-font);
-  color: var(--secondary-color);
-  line-height: 1.5;
-}
-
 .hero p {
   font-family: var(--content-font);
   color: var(--content-color);
   line-height: 2;
 }
 
+.hero h3 {
+  color: var(--content-color);
+}
 .hero {
   padding: 130px 0 100px 0;
   text-align: center;
@@ -72,6 +75,21 @@ p {
   background: var(--primary-color);
 }
 
+.border-light {
+  border-color: #a7bcb9 !important;
+}
+.about-section {
+  padding: 100px 20px;
+}
+.about-section h1 {
+  font-size: 64px;
+}
+.about-section h2 {
+  text-align: left;
+  font-size: 30px;
+}
+/*MEDIA*/
+
 @media (max-width: 768px) {
   h1 {
     font-size: 70px;
@@ -79,6 +97,9 @@ p {
   }
   .hero {
     padding: 50px;
+  }
+  .about-section h1 {
+    text-align: left;
   }
 }
 
@@ -100,9 +121,9 @@ p {
     font-family: var(--content-font);
     box-shadow: var(--box-shadow);
     min-width: 150px;
-    margin: 2px;
+    margin: 10px;
   }
-  img {
+  .main img {
     display: none;
   }
   h2 {
@@ -111,5 +132,8 @@ p {
   h3 {
     font-size: 15px;
     margin-top: 0;
+  }
+  .about-section {
+    padding: 50px 10px;
   }
 }
