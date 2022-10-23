@@ -78,13 +78,13 @@ h3 {
 .border-light {
   border-color: #a7bcb9 !important;
 }
-.about-section-content {
+.container-content {
   padding: 100px 20px;
 }
-.about-section-content h1 {
+.container-content h1 {
   font-size: 64px;
 }
-.about-section-content h2 {
+.container-content h2 {
   text-align: left;
   font-size: 30px;
 }
@@ -98,7 +98,7 @@ h3 {
   .hero {
     padding: 50px;
   }
-  .about-section-content h1 {
+  .container-content h1 {
     text-align: left;
   }
 }
@@ -133,7 +133,7 @@ h3 {
     font-size: 15px;
     margin-top: 0;
   }
-  .about-section-content {
+  .container-content {
     padding: 50px 10px;
   }
 }
