@@ -12,6 +12,7 @@
 body {
   background-color: var(--secondary-color-with-opacity);
   max-width: 1920px;
+  color: var(--content-color);
 }
 
 h1 {
@@ -54,12 +55,16 @@ nav li {
   line-height: 42px;
   margin: 15px 15px 0 0;
   font-family: var(--content-font);
-  color: var(--content-color);
 }
 
-nav h1 {
+nav a {
+  text-decoration: none;
   color: var(--content-color);
-  font-size: 50px;
+  transition: all 100ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--secondary-color);
 }
 
 .logo {
@@ -110,6 +115,7 @@ nav h1 {
   text-align: left;
   font-size: 30px;
 }
+
 /*MEDIA*/
 
 @media (max-width: 768px) {
