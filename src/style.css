@@ -131,6 +131,11 @@ nav li.active a {
   }
   .container-content h1 {
     text-align: left;
+    font-size: 70px;
+  }
+  .container-content h2 {
+    text-align: left;
+    font-size: 20px;
   }
 }
 
@@ -166,5 +171,13 @@ nav li.active a {
   }
   .container-content {
     padding: 50px 10px;
+  }
+  .container-content h1 {
+    text-align: left;
+    font-size: 48px;
+  }
+  .container-content h2 {
+    text-align: left;
+    font-size: 20px;
   }
 }
