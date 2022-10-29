@@ -112,6 +112,11 @@ footer .social-links a:hover {
   background-color: var(--secondary-color);
 }
 
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
 .logo {
   max-height: 40px;
 }
