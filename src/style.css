@@ -2,9 +2,10 @@
   --heading-font: "Allerta Stencil", sans-serif;
   --content-font: "Prompt", sans-serif;
   --background-color: #d9d4d0;
-  --primary-color: #8c5884;
+  --primary-color: #8c7a69;
   --secondary-color: #bfa893;
   --content-color: #0d0d0d;
+  --active-color: #8c5884;
   --btn-text-color: #d9d4d0;
   --box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
@@ -12,39 +13,46 @@
 body {
   background-color: var(--background-color);
   max-width: 1920px;
-  color: var(--content-color);
 }
 
 h1 {
   font-family: var(--heading-font);
   font-weight: 500;
   color: var(--primary-color);
+  font-size: 90px;
 }
 
-p,
+h2 {
+  font-family: var(--content-font);
+  color: var(--primary-color);
+  line-height: 1.5;
+  font-size: 40px;
+}
+
 h2,
+h3 {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--content-color);
+}
+h4 {
+  font-size: 40px;
+  color: var(--content-color);
+  font-family: var(--content-font);
+}
+
+p {
+  font-family: var(--content-font);
+  color: #0d0d0d99;
+  line-height: 1.5;
+}
+
 h3,
-h4,
 h5,
 h6 {
   font-family: var(--content-font);
   color: var(--content-color);
   line-height: 1.5;
-}
-
-h1 {
-  font-size: 90px;
-}
-h2 {
-  font-size: 40px;
-}
-h2,
-h3 {
-  text-align: center;
-  margin-top: 20px;
-}
-h4 {
-  font-size: 40px;
 }
 
 nav {
@@ -72,7 +80,7 @@ nav a {
 }
 nav a:hover,
 nav li.active a {
-  color: var(--secondary-color);
+  color: var(--active-color);
 }
 
 footer {
@@ -86,13 +94,13 @@ footer .contact-box {
 }
 footer .mailto {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--active-color);
   font-size: 20px;
 }
 
 footer a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--active-color);
 }
 
 footer a:hover {
@@ -101,8 +109,8 @@ footer a:hover {
 
 footer .social-links a {
   margin: 0 20px;
-  color: var(--secondary-color);
-  background: var(--content-color);
+  color: var(--background-color);
+  background: var(--primary-color);
   padding: 10px 14px;
   border-radius: 50%;
   font-size: 18px;
@@ -110,13 +118,17 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  color: var(--content-color);
+  color: var(--active-color);
   background-color: var(--secondary-color);
 }
 
 a {
   text-decoration: none;
-  color: var(--secondary-color);
+  color: var(--active-color);
+}
+
+a:hover {
+  color: var(--primary-color);
 }
 
 .logo {
@@ -151,7 +163,8 @@ a {
 }
 
 .btn-branding:hover {
-  background: var(--primary-color);
+  background: var(--active-color);
+  color: var(--btn-text-color);
 }
 
 .border-light {
