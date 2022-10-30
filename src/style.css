@@ -1,16 +1,16 @@
 :root {
   --heading-font: "Allerta Stencil", sans-serif;
   --content-font: "Prompt", sans-serif;
-  --primary-color: #5dacbd;
-  --secondary-color: #24527a;
-  --secondary-color-with-opacity: #24527aa4;
-  --content-color: #a7bcb9;
-  --btn-text-color: #e0ebeb;
+  --background-color: #d9d4d0;
+  --primary-color: #8c5884;
+  --secondary-color: #bfa893;
+  --content-color: #0d0d0d;
+  --btn-text-color: #d9d4d0;
   --box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 body {
-  background-color: var(--secondary-color-with-opacity);
+  background-color: var(--background-color);
   max-width: 1920px;
   color: var(--content-color);
 }
@@ -49,7 +49,9 @@ h4 {
 
 nav {
   padding: 10px;
+  background-color: var(--background-color);
 }
+
 nav ul {
   padding: 0;
   margin: 0;
